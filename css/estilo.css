@@ -1,0 +1,20 @@
+.tbx{
+    color: mediumseagreen;
+    padding: 5px;
+    font-family: Raleway;
+}
+.etiqueta{
+    color: blueviolet;
+    font-family: raleway;
+}
+.boton{
+    background-color: mediumseagreen;
+    color: white;
+    padding: 10px;
+    font-family: raleway;
+    font-size: medium;
+    border: 0 solid #000000;
+}
+.subtitulo{
+    color:mediumseagreen;
+}
