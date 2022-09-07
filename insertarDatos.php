@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "dbprueba070922";
+$dbname = "dbtrabajadores";
 
 // Creando la conexion
 $conn = new mysqli($servername, $username, $password,$dbname);
@@ -14,18 +14,14 @@ if ($conn->connect_error) {
 echo "Conexión correcta";
 
 // SQL para crear las tablas
-$sql = "CREATE TABLE persona(
-    id_persona INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    ci INT(6) NOT NULL,
-    nombre VARCHAR(12),
-    apellidoP VARCHAR(12)
-)";
+$sql = "INSERT INTO persona 
+VALUES";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Tabla creada correctamente";
-} else {
-  echo "Error al crear la tabla: " . $conn->error;
-}
-
-$conn->close();
+    echo "Tabla modifica correctamente";
+  } else {
+    echo "Error al modificar la tabla " . $conn->error;
+  }
+  
+  $conn->close();
 ?>

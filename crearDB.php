@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "dbtrabajadores";
+//$dbname = "dbtrabajadores";
 
 // Creando la conexion
 $conn = new mysqli($servername, $username, $password);
@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 echo "Conexión correcta";
 
 // Consulta para crear la base de datos
-$sql = "CREATE DATABASE dbTrabajadores";
+$sql = "CREATE DATABASE dbPrueba070922";
 if ($conn->query($sql) === TRUE) {
   echo "Base de datos creada correctamente";
 } else {
