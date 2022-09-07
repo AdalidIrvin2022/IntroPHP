@@ -1,4 +1,7 @@
 <?php
+
+    //Los tipos de datos en PHP son muy importantes para entender las respuestas del servidor
+
     print "<h1>Tipos de Datos en PHP</h1>";
     //Tipos de datos en PHP
     //Dato Entero - Integer
