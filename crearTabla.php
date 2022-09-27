@@ -2,7 +2,13 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "dbprueba070922";
+$dbname = $_POST["nombredb"];
+$tabla = $_POST["nombreTabla"];
+$llaveP=$_POST["llave"];
+$parametro1=$_POST["p1"];
+$parametro2=$_POST["p2"];
+$parametro3=$_POST["p3"];
+
 
 // Creando la conexion
 $conn = new mysqli($servername, $username, $password,$dbname);
@@ -14,11 +20,11 @@ if ($conn->connect_error) {
 echo "Conexión correcta";
 
 // SQL para crear las tablas
-$sql = "CREATE TABLE persona(
-    id_persona INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    ci INT(6) NOT NULL,
-    nombre VARCHAR(12),
-    apellidoP VARCHAR(12)
+$sql = "CREATE TABLE $tabla(
+    $llaveP INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    $parametro1 INT(6) NOT NULL,
+    $parametro2 VARCHAR(12),
+    $parametro3 VARCHAR(12)
 )";
 
 if ($conn->query($sql) === TRUE) {

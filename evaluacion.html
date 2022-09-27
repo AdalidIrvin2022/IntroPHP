@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo2.css">
+</head>
+<body>
+    <div class="menu">
+        <div>
+            <a href="">Inicio</a>
+        </div>
+        <div>
+            <a href="">Creación de BD</a>
+        </div>
+        <div>
+            <a href="">Creacion de Tabla</a>
+        </div>
+        <div>
+            <a href="">Registro de datos</a>
+        </div>
+        <div>
+            <a href="">Reportes</a>
+        </div>
+    </div>
+    <div class="contenedor">
+        <h3>Creación de la base de datos</h3>
+        <p>
+            Aquí creamos la base de datos
+        </p>
+        <form action="crearDB.php" method="post">
+            <h3 class="etiqueta">Nombre de BD:</h3>         
+            <input class="tbx" type="text" name="nombredb" placeholder="coloque aqui el nombre de la base de datos"> <br>
+            <div>
+                <br>
+                <input type="submit" class="boton">
+            </div>        
+        </form>
+    </div>
+    <div class="contenedor">
+        <h3>Creación de tablas</h3>
+        <p>
+            Aquí creamos las tablas
+        </p>
+        <form action="crearTabla.php" method="post">
+            <h3 class="etiqueta">Nombre de la base de datos:</h3>         
+            <input class="tbx" type="text" name="nombredb" placeholder="coloque aqui el nombre de la base de datos"> <br>
+            <h3 class="etiqueta">Nombre de la tabla:</h3>         
+            <input class="tbx" type="text" name="nombreTabla" placeholder="coloque aqui el nombre de la tabla a crear"> <br>
+            <h3 class="etiqueta">Columnas</h3>         
+            <input class="tbx" type="text" name="llave" placeholder="Llave Primaria"> <br>
+            <input class="tbx" type="text" name="p1" placeholder="Atributo 1 - Entero"> <br>
+            <input class="tbx" type="text" name="p2" placeholder="Atributo 2 - Cadena"> <br>
+            <input class="tbx" type="text" name="p3" placeholder="Atributo 3 - Cadena"> <br>
+            <div>
+                <br>
+                <input type="submit" class="boton">
+            </div>        
+        </form>
+        <?php
+
+        ?>
+    </div>
+    <div class="contenedor">
+        <h3>Creación de restricciones y llaves</h3>
+        <p>
+            Aquí creamos las llaves
+        </p>
+    </div>
+    <div class="contenedor">
+        <h3>Registro de datos</h3>
+        <p>
+            Aqui realizamos el registro de datos
+        </p>
+        <form action="insertarDatos.php" method="post">
+            <h3 class="etiqueta">Nombre de la base de datos:</h3>         
+            <input class="tbx" type="text" name="nombredb" placeholder="coloque aqui el nombre de la base de datos"> <br>
+            <h3 class="etiqueta">Nombre de la tabla:</h3>         
+            <input class="tbx" type="text" name="nombreTabla" placeholder="coloque aqui el nombre de la tabla a crear"> <br>
+            <h3 class="etiqueta">Datos a ingresar</h3>         
+            <input class="tbx" type="text" name="p1" placeholder="Atributo 1 - Entero"> <br>
+            <input class="tbx" type="text" name="p2" placeholder="Atributo 2 - Cadena"> <br>
+            <input class="tbx" type="text" name="p3" placeholder="Atributo 3 - Cadena"> <br>
+            <div>
+                <br>
+                <input type="submit" class="boton">
+            </div>        
+        </form>
+    </div>
+</body>
+</html>
